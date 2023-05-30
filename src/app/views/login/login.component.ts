@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { RequestLogin } from 'src/app/resources/models/RequestLogin';
+import { AlertService } from 'src/app/resources/services/alert.service';
+import { LoginService } from 'src/app/resources/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -9,11 +13,22 @@ import { RequestLogin } from 'src/app/resources/models/RequestLogin';
 export class LoginComponent implements OnInit {
   public requestLogin!: RequestLogin;
 
-  constructor() {}
+  constructor(
+    private loginService: LoginService,
+    private alertService: AlertService,
+    private router: Router,
+    ) {}
+  
   ngOnInit(): void {
     this.requestLogin = new RequestLogin();
   }
 public doLogin(): void{
-  console.log(this.requestLogin)
+  this.loginService.doLogin(this.requestLogin).subscribe(
+    (data) => {
+    this.router.navigate(['dashboard']);
+    },
+    (httperror) => {
+    this.alertService.error('', httperror.error.message);
+    });
 } 
 }
