@@ -1,6 +1,111 @@
+$background-color: #000000 !important;
+$font-color: #FCA311 !important;
+$font-color2: #fff !important;
+$font-family1: 'Roboto', sans-serif;
+$font-size1: 12pt;
+$font-sizeMenu: 16px;
 
-.card1{
-    margin-left: -2em;
-    height: 900px;   
-    width: 200px;
+.menucus {
+         background-color: transparent;
+         border-color: transparent;
+         border-radius: 15px;   
+         height: 80vh; 
+}
+
+.menucus ul li:nth-child(1) {
+         margin-top: 0em;   
+}
+.menucus ul li:nth-child(6) {
+    margin-top: 19em;
+}    
+
+.p-menuitem{
+    font-weight: bold;
+    font-family: $font-family1;
+
+}
+.p-menuitem-link:not(.p-disable):hover{
+    background-color: #595959 !important;
+}
+.p-menuitem-text{   
+    color: #fff ! important;
+    font-size: $font-sizeMenu;
+}
+.p-menu-separator{
+    border-top: 2.5px solid #FCA311! important;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#item-1{
+    opacity: 0.9;
+    border-radius: 15px;
+    margin-left: 0em;
+    background-color: black;     
+}
+
+#item-2{
+    flex-grow: 2;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    border-radius: 15px;
+    margin-left: 3em;    
+}
+.tituloMenu{
+    color: $font-color;
+    text-align: center;
+    margin-top: 1.5em;
+    border: none;
+    font-size: 18px;
+    font-weight: bold; 
+}
+.textoFooter{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0em;
+}
+.titulo{
+    color: $font-color2;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 2em;
+    border: none;
+}
+.textoMatrícula{
+    color: $font-color;
+    text-align: left;
+    margin-top: 2.5em;
+    margin-left: 3em;
+    border: none;
+    font-size: $font-size1;   
+}
+.textoNome{
+    color: $font-color;
+    margin-top: -2.5em;
+    margin-left: 15em;
+    border: none; 
+    font-size: $font-size1;  
+}
+.textoPlano{
+    color: $font-color;
+    margin-top: -2.5em;
+    margin-left: 35em;
+    border: none;   
+    font-size: $font-size1; 
+}
+.textoSituacao{
+    color: $font-color;
+    margin-top: -2.5em;
+    margin-left: 45em;
+    border: none;
+    font-size: $font-size1;    
+}
+.textoStatus{
+    color: $font-color;
+    margin-top: -3.7em;
+    margin-left: 55em;
+    border: none;   
+    font-size: $font-size1; 
 }

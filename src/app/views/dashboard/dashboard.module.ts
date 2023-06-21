@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { CardModule } from 'primeng/card';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+import { DividerModule } from 'primeng/divider';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -11,7 +15,11 @@ import { CardModule } from 'primeng/card';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    CardModule 
+    CardModule,
+    TieredMenuModule,
+    DividerModule,
+    TableModule,
+    ButtonModule
     
   ]
 })

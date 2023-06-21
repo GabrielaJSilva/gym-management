@@ -5,6 +5,7 @@
 $background-color: #000000 !important;
 $font-color: #FCA311 !important;
 $font-color2: #fff !important;
+$font-family1: 'Roboto', sans-serif;
 
 body{
     background-image: url(./assets/background.jpg);
@@ -20,9 +21,6 @@ body{
     color: $font-color;
     font-family: 'Roboto', sans-serif;
     border-radius: 15px;
-    width: 400px;
-    height: 400px;
-    margin-left: 30%;
     opacity: 0.80;   
 }
 
