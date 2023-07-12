@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { RequestLogin } from 'src/app/resources/models/RequestLogin';
 import { AlertService } from 'src/app/resources/services/alert.service';
 import { LoginService } from 'src/app/resources/services/login.service';
-
+import { Product } from 'src/app/resources/domain/product';
+import { ProductService } from 'src/app/resources/services/productservice';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,13 +17,14 @@ import { LoginService } from 'src/app/resources/services/login.service';
 
 export class DashboardComponent implements OnInit {
   items: MenuItem[] = [];
+  products!: Product[];
   requestLogin: any;
 
   
   constructor(
     private loginService: LoginService,
     private alertService: AlertService,
-    //private productService: ProductService,
+    private productService: ProductService,
     private router: Router,
     ) {}
   
@@ -54,6 +56,9 @@ export class DashboardComponent implements OnInit {
           },
 
       ];
+      this.productService.getProductsMini().then((data: Product[]) => {
+        this.products = data;
+      });
   }
   abrirProfessores() {
     this.router.navigate(['login']);

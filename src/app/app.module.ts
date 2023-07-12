@@ -10,6 +10,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { TelaProfessoresComponent } from './views/tela-professores/tela-professores.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TelaProfessoresComponent } from './views/tela-professores/tela-professo
     HttpClientModule,
     InputTextModule,
     ButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
