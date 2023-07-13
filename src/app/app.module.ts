@@ -11,6 +11,7 @@ import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { TelaProfessoresComponent } from './views/tela-professores/tela-professores.component';
 import { TableModule } from 'primeng/table';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TableModule } from 'primeng/table';
     InputTextModule,
     ButtonModule,
     AppRoutingModule,
-    TableModule
+    TableModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

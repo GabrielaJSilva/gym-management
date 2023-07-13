@@ -11,7 +11,12 @@ import { ProductService } from 'src/app/resources/services/productservice';
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html', 
   styleUrls: ['./dashboard.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  // styles: [
+  //   `.row {
+  //       background-color: black !important;
+  //     }`
+  //     ],
 
 })
 
