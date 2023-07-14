@@ -20,16 +20,26 @@ $font-sizeMenu: 16px;
     margin-left: 3em;    
     margin-top: 0;
 }
+.menu-container{
+    display: flex;
+    justify-content: left;
+    min-width: 200px;
+    opacity: 0.92;
+    border-radius: 15px;
+    margin-left: 0em;
+    background-color: black;
+    height: 100vh;
+    width: 200px;
+}
 .menucus {
-         background-color: transparent;
-         border-color: transparent;   
-         height: 80vh;
-         margin-left: 0;
-         margin-top: 6em;         
-          
+    background-color: transparent;
+    border-color: transparent;   
+    height: 80vh;
+    margin-left: 0;
+    margin-top: 6em;              
 }
 .menucus ul li:nth-child(1) {
-         margin-top: 0em;   
+    margin-top: 0em;   
 }
 .menucus ul li:nth-child(6) {
     margin-top: 18em;
@@ -38,7 +48,6 @@ $font-sizeMenu: 16px;
     font-weight: bold;
     font-family: $font-family1;
     margin-left: 0%;
-
 }
 .p-menuitem-link:not(.p-disable):hover{
     background-color: #595959 !important;
@@ -50,20 +59,7 @@ $font-sizeMenu: 16px;
 .p-menu-separator{
     border-top: 2.5px solid #FCA311! important;
     margin-left: 0%;
-    //position: ;
 }
-.menu-container{
-    display: flex;
-    justify-content: left;
-    opacity: 0.92;
-    border-radius: 15px;
-    margin-left: 0em;
-    background-color: black;
-    height: 100vh;
-    width: 200px;
-}
-
-
 .tituloMenu{
     color: $font-color;
     text-align: center;
@@ -89,8 +85,17 @@ $font-sizeMenu: 16px;
     margin-left: 2em;
     border: none;
 }
-
-.tableStyle{
-    background-color: rgb(0, 0, 0);
-    opacity: 0.92;
+.p-datatable.myTable{
+    margin-top: 6em;
+}
+.p-datatable.myTable th{
+    background: rgb(0, 0, 0) ! important;
+    color: $font-color;
+}
+.p-datatable.myTable tr{
+    background: rgb(0, 0, 0) ! important;
+    color: $font-color2;
+}
+.card3{
+    margin-left: -2em;
 }

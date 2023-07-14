@@ -12,11 +12,17 @@ import { ProductService } from 'src/app/resources/services/productservice';
   templateUrl: './dashboard.component.html', 
   styleUrls: ['./dashboard.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  // styles: [
-  //   `.row {
-  //       background-color: black !important;
-  //     }`
-  //     ],
+//   styles: [
+//       `
+//       .row {
+//           background-color: blue !important;
+//           color: #ffffff !important;
+//       }
+//       .cell {
+//         background-color: black !important;
+//       }
+//     `,
+// ],
 
 })
 

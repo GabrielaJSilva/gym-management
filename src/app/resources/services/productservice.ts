@@ -9,43 +9,43 @@ export class ProductService {
         return [
             {
                 id: '1000',
-                code: 'f230fh0g3',
-                name: 'Bamboo Watch',
+                matricula: '00001',
+                nome: 'Joao da Silva',
                 description: 'Product Description',
                 image: 'bamboo-watch.jpg',
                 price: 65,
-                category: 'Accessories',
+                plano: 'Ouro',
                 quantity: 24,
                 inventoryStatus: 'INSTOCK',
                 rating: 5
             },
             {
-                id: '1001',
-                code: 'nvklal433',
-                name: 'Black Watch',
+                situacao: '1001',
+                matricula: '00002',
+                nome: 'Marisa da Silva',
                 description: 'Product Description',
                 image: 'black-watch.jpg',
                 price: 72,
-                category: 'Accessories',
+                plano: 'Prata',
                 quantity: 61,
                 inventoryStatus: 'OUTOFSTOCK',
                 rating: 4
             },
             {
                 id: '1002',
-                code: 'zz21cz3c1',
-                name: 'Blue Band',
+                matricula: '00003',
+                nome: 'Joaquim Souza',
                 description: 'Product Description',
                 image: 'blue-band.jpg',
                 price: 79,
-                category: 'Fitness',
+                plano: 'Bronze',
                 quantity: 2,
                 inventoryStatus: 'LOWSTOCK',
                 rating: 3
             },
             {
                 id: '1003',
-                code: '244wgerg2',
+                matricula: '244wgerg2',
                 name: 'Blue T-Shirt',
                 description: 'Product Description',
                 image: 'blue-t-shirt.jpg',
@@ -57,7 +57,7 @@ export class ProductService {
             },
             {
                 id: '1004',
-                code: 'h456wer53',
+                matricula: 'h456wer53',
                 name: 'Bracelet',
                 description: 'Product Description',
                 image: 'bracelet.jpg',
@@ -69,7 +69,7 @@ export class ProductService {
             },
             {
                 id: '1005',
-                code: 'av2231fwg',
+                matricula: 'av2231fwg',
                 name: 'Brown Purse',
                 description: 'Product Description',
                 image: 'brown-purse.jpg',
@@ -81,7 +81,7 @@ export class ProductService {
             },
             {
                 id: '1006',
-                code: 'bib36pfvm',
+                matricula: 'bib36pfvm',
                 name: 'Chakra Bracelet',
                 description: 'Product Description',
                 image: 'chakra-bracelet.jpg',
@@ -93,7 +93,7 @@ export class ProductService {
             },
             {
                 id: '1007',
-                code: 'mbvjkgip5',
+                matricula: 'mbvjkgip5',
                 name: 'Galaxy Earrings',
                 description: 'Product Description',
                 image: 'galaxy-earrings.jpg',
@@ -105,7 +105,7 @@ export class ProductService {
             },
             {
                 id: '1008',
-                code: 'vbb124btr',
+                matricula: 'vbb124btr',
                 name: 'Game Controller',
                 description: 'Product Description',
                 image: 'game-controller.jpg',
@@ -117,7 +117,7 @@ export class ProductService {
             },
             {
                 id: '1009',
-                code: 'cm230f032',
+                matricula: 'cm230f032',
                 name: 'Gaming Set',
                 description: 'Product Description',
                 image: 'gaming-set.jpg',
@@ -129,7 +129,7 @@ export class ProductService {
             },
             {
                 id: '1010',
-                code: 'plb34234v',
+                matricula: 'plb34234v',
                 name: 'Gold Phone Case',
                 description: 'Product Description',
                 image: 'gold-phone-case.jpg',
@@ -141,7 +141,7 @@ export class ProductService {
             },
             {
                 id: '1011',
-                code: '4920nnc2d',
+                matricula: '4920nnc2d',
                 name: 'Green Earbuds',
                 description: 'Product Description',
                 image: 'green-earbuds.jpg',
@@ -153,7 +153,7 @@ export class ProductService {
             },
             {
                 id: '1012',
-                code: '250vm23cc',
+                matricula: '250vm23cc',
                 name: 'Green T-Shirt',
                 description: 'Product Description',
                 image: 'green-t-shirt.jpg',
@@ -165,7 +165,7 @@ export class ProductService {
             },
             {
                 id: '1013',
-                code: 'fldsmn31b',
+                matricula: 'fldsmn31b',
                 name: 'Grey T-Shirt',
                 description: 'Product Description',
                 image: 'grey-t-shirt.jpg',
@@ -177,7 +177,7 @@ export class ProductService {
             },
             {
                 id: '1014',
-                code: 'waas1x2as',
+                matricula: 'waas1x2as',
                 name: 'Headphones',
                 description: 'Product Description',
                 image: 'headphones.jpg',
@@ -189,7 +189,7 @@ export class ProductService {
             },
             {
                 id: '1015',
-                code: 'vb34btbg5',
+                matricula: 'vb34btbg5',
                 name: 'Light Green T-Shirt',
                 description: 'Product Description',
                 image: 'light-green-t-shirt.jpg',
@@ -201,7 +201,7 @@ export class ProductService {
             },
             {
                 id: '1016',
-                code: 'k8l6j58jl',
+                matricula: 'k8l6j58jl',
                 name: 'Lime Band',
                 description: 'Product Description',
                 image: 'lime-band.jpg',
@@ -213,7 +213,7 @@ export class ProductService {
             },
             {
                 id: '1017',
-                code: 'v435nn85n',
+                matricula: 'v435nn85n',
                 name: 'Mini Speakers',
                 description: 'Product Description',
                 image: 'mini-speakers.jpg',
@@ -225,7 +225,7 @@ export class ProductService {
             },
             {
                 id: '1018',
-                code: '09zx9c0zc',
+                matricula: '09zx9c0zc',
                 name: 'Painted Phone Case',
                 description: 'Product Description',
                 image: 'painted-phone-case.jpg',
@@ -237,7 +237,7 @@ export class ProductService {
             },
             {
                 id: '1019',
-                code: 'mnb5mb2m5',
+                matricula: 'mnb5mb2m5',
                 name: 'Pink Band',
                 description: 'Product Description',
                 image: 'pink-band.jpg',
@@ -249,7 +249,7 @@ export class ProductService {
             },
             {
                 id: '1020',
-                code: 'r23fwf2w3',
+                matricula: 'r23fwf2w3',
                 name: 'Pink Purse',
                 description: 'Product Description',
                 image: 'pink-purse.jpg',
@@ -261,7 +261,7 @@ export class ProductService {
             },
             {
                 id: '1021',
-                code: 'pxpzczo23',
+                matricula: 'pxpzczo23',
                 name: 'Purple Band',
                 description: 'Product Description',
                 image: 'purple-band.jpg',
@@ -273,7 +273,7 @@ export class ProductService {
             },
             {
                 id: '1022',
-                code: '2c42cb5cb',
+                matricula: '2c42cb5cb',
                 name: 'Purple Gemstone Necklace',
                 description: 'Product Description',
                 image: 'purple-gemstone-necklace.jpg',
@@ -285,7 +285,7 @@ export class ProductService {
             },
             {
                 id: '1023',
-                code: '5k43kkk23',
+                matricula: '5k43kkk23',
                 name: 'Purple T-Shirt',
                 description: 'Product Description',
                 image: 'purple-t-shirt.jpg',
@@ -297,7 +297,7 @@ export class ProductService {
             },
             {
                 id: '1024',
-                code: 'lm2tny2k4',
+                matricula: 'lm2tny2k4',
                 name: 'Shoes',
                 description: 'Product Description',
                 image: 'shoes.jpg',
@@ -309,7 +309,7 @@ export class ProductService {
             },
             {
                 id: '1025',
-                code: 'nbm5mv45n',
+                matricula: 'nbm5mv45n',
                 name: 'Sneakers',
                 description: 'Product Description',
                 image: 'sneakers.jpg',
@@ -321,7 +321,7 @@ export class ProductService {
             },
             {
                 id: '1026',
-                code: 'zx23zc42c',
+                matricula: 'zx23zc42c',
                 name: 'Teal T-Shirt',
                 description: 'Product Description',
                 image: 'teal-t-shirt.jpg',
