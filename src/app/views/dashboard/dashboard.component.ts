@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
-import { RequestLogin } from 'src/app/resources/models/RequestLogin';
 import { AlertService } from 'src/app/resources/services/alert.service';
 import { LoginService } from 'src/app/resources/services/login.service';
 import { Product } from 'src/app/resources/domain/product';
@@ -12,18 +11,6 @@ import { ProductService } from 'src/app/resources/services/productservice';
   templateUrl: './dashboard.component.html', 
   styleUrls: ['./dashboard.component.scss'],
   encapsulation: ViewEncapsulation.None,
-//   styles: [
-//       `
-//       .row {
-//           background-color: blue !important;
-//           color: #ffffff !important;
-//       }
-//       .cell {
-//         background-color: black !important;
-//       }
-//     `,
-// ],
-
 })
 
 export class DashboardComponent implements OnInit {
