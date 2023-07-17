@@ -62,6 +62,9 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['login']);
     //console.log('funcionou')
   }
+  deslogar() {
+    this.router.navigate(['login']);
+  }
 }
 
 

@@ -4,7 +4,10 @@
                         <p>Gym Management</p> 
                     </header>              
                     <p-tieredMenu [model]="items" styleClass="menucus" ></p-tieredMenu> 
-                    <footer class="textoFooter">
+                    <span class="iconeSair">
+                        <p-button (click)="deslogar()" type="button" icon="pi pi-sign-out" styleClass="p-button-text"></p-button>
+                    </span>             
+                    <footer class="textoFooter">                
                         <p>Admin</p> 
                     </footer>              
     </div> 
@@ -12,12 +15,11 @@
                 <div class="titulo"> 
                     <h3>Alunos</h3>
                 </div>
-                
                 <div class="card3">
                      <p-table 
                      [value]="products" 
                      [paginator]="true"
-                     [rows]="10"
+                     [rows]="20"
                      [showCurrentPageReport]="true"
                      [tableStyle]="{'min-width': '50rem'}" 
                      styleClass="myTable" 
@@ -42,11 +44,9 @@
                                 <td>{{ product.status }}</td>
                             </tr>
                         </ng-template>
-                        <ng-template pTemplate="paginatorleft">
-                            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+                        <ng-template pTemplate="paginatorleft">           
                         </ng-template>
                         <ng-template pTemplate="paginatorright">
-                            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
                         </ng-template>
                     </p-table>
                 </div>
