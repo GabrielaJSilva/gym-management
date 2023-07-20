@@ -95,6 +95,9 @@ $font-sizeMenu: 16px;
     border: none;
     height: 100%;
 }
+// .headerTable{
+//     margin-left: -1em;
+// }
 .p-datatable.myTable{
     margin-top: 3em;
     margin-right: 2em;
@@ -122,6 +125,25 @@ $font-sizeMenu: 16px;
 }
 .p-datatable .p-paginator-bottom{
     border-width: 0;
+}
+.p-datatable .p-datatable-thead > tr > th {
+    padding: 2em 1em;
+}
+.p-checkbox .p-checkbox-box {
+    margin-top: 1.2em;
+    background: #000000;
+}
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #bcbcbc;
+    background: #000000;
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: #bcbcbc;
+    background: #000000;
+    color: #ffffff;
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus{
+    border-color: #000000;
 }
 .p-paginator .p-paginator-last{
     color: #fff;

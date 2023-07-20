@@ -27,16 +27,17 @@
                      [rowsPerPageOptions]="[10, 25, 50]">                            
                         <ng-template pTemplate="header">
                             <tr>
+                                <th><p-checkbox [(ngModel)]="checked" [value]="true" [binary]="true" inputId="binary"></p-checkbox></th>
                                 <th>Matrícula</th>
                                 <th>Nome</th>
                                 <th>Plano</th>
                                 <th>Situação</th>
                                 <th>Status de Pagamento</th>
-                            </tr>
-                           
+                            </tr>                       
                         </ng-template>
                         <ng-template pTemplate="body" let-product>
                             <tr>
+                                <p-checkbox [(ngModel)]="checked" [value]="true" [binary]="true"  inputId="binary"></p-checkbox>             
                                 <td>{{ product.matricula }}</td>
                                 <td>{{ product.nome }}</td>
                                 <td>{{ product.plano }}</td>

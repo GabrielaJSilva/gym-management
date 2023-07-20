@@ -17,8 +17,9 @@ export class DashboardComponent implements OnInit {
   items: MenuItem[] = [];
   products!: Product[];
   requestLogin: any;
+  checked: boolean = false;
+  //binary: boolean = true;
 
-  
   constructor(
     private loginService: LoginService,
     private alertService: AlertService,
@@ -26,7 +27,6 @@ export class DashboardComponent implements OnInit {
     private router: Router,
     ) {}
   
-
   ngOnInit() {
     
       this.items = [
@@ -42,12 +42,10 @@ export class DashboardComponent implements OnInit {
               label: 'Planos',   
           },
           {
-            label: 'Cadastrar Aluno',
-            
+            label: 'Cadastrar Aluno',           
           },
           {
-            label: 'Financeiro',
-            
+            label: 'Financeiro',           
           },
           {
               separator: true      
