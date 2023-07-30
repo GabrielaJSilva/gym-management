@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { RequestLogin } from 'src/app/resources/models/RequestLogin';
 import { AlertService } from 'src/app/resources/services/alert.service';

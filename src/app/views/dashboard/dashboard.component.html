@@ -13,7 +13,7 @@
     </div> 
     <div class="base-container">       
                 <div class="titulo"> 
-                    <h3>Alunos</h3>
+                    <h3>Alunos</h3>                   
                 </div>
                 <div class="card3">
                      <p-table 
@@ -26,8 +26,13 @@
                      currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                      [rowsPerPageOptions]="[10, 25, 50]">                            
                         <ng-template pTemplate="header">
+                            <div class="botaoDeletar">
+                                <p-button styleClass="p-button-danger" label="Deletar"></p-button>
+                            </div>
                             <tr>
-                                <th><p-checkbox [(ngModel)]="checked" [value]="true" [binary]="true" inputId="binary"></p-checkbox></th>
+                                <th style="width: 1rem">
+                                    <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                                </th>                                
                                 <th>Matrícula</th>
                                 <th>Nome</th>
                                 <th>Plano</th>
@@ -37,7 +42,9 @@
                         </ng-template>
                         <ng-template pTemplate="body" let-product>
                             <tr>
-                                <p-checkbox [(ngModel)]="checked" [value]="true" [binary]="true"  inputId="binary"></p-checkbox>             
+                                <td class="linhacheckbox">
+                                    <p-tableCheckbox [value]="product"></p-tableCheckbox>
+                                </td>                                
                                 <td>{{ product.matricula }}</td>
                                 <td>{{ product.nome }}</td>
                                 <td>{{ product.plano }}</td>

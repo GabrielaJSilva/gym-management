@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   products!: Product[];
   requestLogin: any;
   checked: boolean = false;
+  selectedProducts!: Product;
   //binary: boolean = true;
 
   constructor(
