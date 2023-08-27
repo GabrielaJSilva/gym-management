@@ -8,20 +8,16 @@ import { AlunosService } from 'src/app/resources/services/alunosservice';
   styleUrls: ['./tela-alunos.component.scss']
 })
 export class TelaAlunosComponent {
-  //alunos!: any[];
+
   alunos!: Alunos [];
-  //requestLogin: any;
-  //checked: boolean = false;
   selectedAluno!: Alunos;
   constructor(
-    //private loginService: LoginService,
-    //private alertService: AlertService,
+
     private alunosService: AlunosService,
-    //private router: Router,
+
     ) {}
   ngOnInit() {
     
-  
     this.alunosService.getAlunosMini().then((data: Alunos[]) => {
       this.alunos = data;
     });

@@ -1,0 +1,21 @@
+$font-color: #FCA311 !important;
+$font-color2: #fff !important;
+.cardBase{
+    margin-left: 3em;  
+}
+.titulo{
+    color: $font-color2;
+    text-align: left;
+    margin-top: 0em;
+    margin-left: 2em;
+    border: none;
+    height: 100%;
+}
+.p-card .p-card-body {
+    //padding: 1.25rem;
+    background-color: white !important;
+    
+}
+// .p-card{
+//     background-color: #fff !important;
+// }

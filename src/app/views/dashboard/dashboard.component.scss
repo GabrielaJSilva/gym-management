@@ -32,10 +32,10 @@ $font-sizeMenu: 16px;
     margin-left: 3em;    
     margin-top: 0;
 }
-.botaoDeletar{
-    position: absolute;
-    margin-left: 44.5em;
-}
+// .botaoDeletar{
+//     position: absolute;
+//     margin-left: 44.5em;
+// }
 .menucus {
     background-color: transparent;
     border-color: transparent;   
@@ -167,4 +167,14 @@ $font-sizeMenu: 16px;
 .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
     color: $font-color;
     font-weight: bold;
+}
+// .cardPf{
+//     color: #fff;
+// }
+.p-card .p-card-body {
+    //padding: 1.25rem;
+    border-color: #fff !important;
+    
+    border-radius: 15px;
+    background-color: white !important;
 }

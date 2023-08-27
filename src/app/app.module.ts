@@ -9,7 +9,7 @@ import { LoginComponent } from './views/login/login.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
-import { TelaProfessoresComponent } from './views/tela-professores/tela-professores.component';
+//import { TelaProfessoresComponent } from './views/tela-professores/tela-professores.component';
 import { TableModule } from 'primeng/table';
 import { CommonModule } from '@angular/common';
 //import { TelaAlunosComponent } from './views/tela-alunos/tela-alunos.component';
@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
   declarations: [
     AppComponent,
     LoginComponent,
-    TelaProfessoresComponent,
+ //   TelaProfessoresComponent,
 //   TelaAlunosComponent,
 //    MenuComponent
   ],

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 import { MenuModule } from 'src/app/views/menu/menu.module';
 import { TelaAlunosModule } from 'src/app/views/tela-alunos/tela-alunos.module';
-
+import { TelaProfessoresModule } from '../tela-professores/tela-professores.module';
 @NgModule({
   declarations: [ DashboardComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
@@ -27,6 +27,7 @@ import { TelaAlunosModule } from 'src/app/views/tela-alunos/tela-alunos.module';
     FormsModule,
     MenuModule,
     TelaAlunosModule,
+    TelaProfessoresModule
   ]
 })
 export class DashboardModule { }
